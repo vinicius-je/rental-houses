@@ -1,9 +1,12 @@
 import './App.css';
+import GridContainer from './components/GridContainer';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <h3>Hello</h3>
+      <NavBar/>
+      <GridContainer/>
     </div>
   );
 }
