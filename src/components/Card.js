@@ -1,13 +1,40 @@
 import React from 'react' 
 import './Card.css'
 
-export default function Card(props){
+export default function Card({value}){
+
+    const {img, street, price, bedrooms, bathrooms, area} = value
+
     return(
         <div className="card-container">
-            <img src='https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'></img>
-            <h3 className="card-title">teste</h3>
-            <p className="card-description">There are many variations of passages of Lorem Ipsum available</p>
-            <p className="card-price">$ 300.000</p>
+            <img src={img}></img>
+            <div className="card-information">
+                <p className="card-price">${price.toFixed(3)}</p>
+                <p className="card-street">{street}</p>
+                <div className="card-footer">
+                <div className="card-footer-box">
+                    <div className="card-footer-icon-box">
+                        <i className="fas fa-bed"></i>
+                        <p>{bedrooms}</p>
+                    </div>
+                    <small>Bedrooms</small>
+                </div>
+                <div className="card-footer-box">
+                    <div className="card-footer-icon-box">
+                        <i className="fas fa-bath"></i>
+                        <p>{bathrooms}</p>
+                    </div>
+                    <small>Bathrooms</small>
+                </div>
+                <div className="card-footer-box">
+                    <div className="card-footer-icon-box">
+                        <i className="fas fa-home"></i>
+                        <p>{area}m<sup>2</sup></p>
+                    </div>
+                    <small>Area</small>
+                </div>
+            </div>
+            </div>
         </div>
     )
 }
