@@ -1,14 +1,14 @@
-import React from 'react'
-import { houses } from '../houses'
+import React, { useContext } from 'react'
+import { HousesContext } from '../context/HousesContext'
 import Card from './Card'
 import './GridContainer.css'
 
 
 export default function GridContainer(props){
-    console.log(houses)
+    const {properties} = useContext(HousesContext);
     return(
         <div className="grid-container">
-            {houses.map((house, index) => <Card key={index} value={house}/>)}
+            {properties.map((house, index) => <Card key={index} value={house}/>)}
         </div>
     )
 }
