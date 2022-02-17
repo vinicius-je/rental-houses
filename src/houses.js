@@ -71,4 +71,20 @@ export const houses = [
         bathrooms: 1,
         area: 100
     },
+    {   
+        img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        street: 'St. lorem ipsum, nº 10',
+        price: 250.000,
+        bedrooms: 3,
+        bathrooms: 3,
+        area: 180
+    },
+    {   
+        img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80',
+        street: 'St. lorem ipsum, nº 10',
+        price: 250.000,
+        bedrooms: 3,
+        bathrooms: 3,
+        area: 200
+    }
 ]

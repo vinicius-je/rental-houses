@@ -1,13 +1,13 @@
 import React from 'react' 
 import './Card.css'
 
-export default function Card({value}){
+export default function Card({value, index}){
 
     const {img, street, price, bedrooms, bathrooms, area} = value
 
     return(
-        <div className="card-container">
-            <img src={img}></img>
+        <div layout className="card-container">
+            <img src={img} alt={index}></img>
             <div className="card-information">
                 <p className="card-price">${price.toFixed(3)}</p>
                 <p className="card-street">{street}</p>

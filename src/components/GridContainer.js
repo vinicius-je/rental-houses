@@ -3,7 +3,6 @@ import { HousesContext } from '../context/HousesContext'
 import Card from './Card'
 import './GridContainer.css'
 
-
 export default function GridContainer(props){
     const {properties} = useContext(HousesContext);
     return(

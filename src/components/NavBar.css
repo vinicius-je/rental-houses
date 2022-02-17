@@ -6,7 +6,7 @@
 }
 
 .nav-btn-container{
-    width: 480px;
+    width: 490px;
     display: flex;
     justify-content: space-between;
 }
@@ -16,6 +16,7 @@
     border-radius: 25px;
     border: 1px solid #85F296;
     background-color: white;
+    font-weight: bold;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
@@ -23,12 +24,11 @@
 .nav-btn.active, .nav-btn:hover{
     background-color: #85F296;
     color: white;
-    font-weight: bold;
 }
 
         @media screen and (max-width: 620px){
             .nav-container{
-                height: 200px;
+                height: 240px;
             }
 
             .nav-container, .nav-btn-container{
