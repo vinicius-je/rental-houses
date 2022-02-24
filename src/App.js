@@ -1,15 +1,18 @@
-import Carousel from './components/Carousel';
-import GridContainer from './components/GridContainer'
-import NavBar from './components/NavBar'
-import { HousesProvider } from './context/HousesContext'
+import CarouselContainer from './components/CarouselContainer';
+import FilterNavbar from './components/FilterNavbar';
+import MainContent from './components/MainContent';
+import GridContainer from './components/GridContainer';
+import { HousesProvider } from './context/HousesContext';
 
 function App() {
   return (
     <div className="App">
       <HousesProvider>
-        <Carousel/>
-        <NavBar/>
-        <GridContainer/>
+        <CarouselContainer/>
+        <MainContent>
+          <FilterNavbar/>
+          <GridContainer/>
+        </MainContent>
       </HousesProvider>
     </div>
   );

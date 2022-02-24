@@ -1,0 +1,17 @@
+.carousel-container{
+    cursor: grab;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.carousel-element-wrapper{
+    width: 100%;
+    height: 550px;
+}
+
+.carousel-element-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+

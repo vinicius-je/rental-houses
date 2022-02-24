@@ -1,9 +1,9 @@
 import React, { useContext } from 'react' 
-import './NavBar.css'
+import './FilterNavbar.css'
 import { HousesContext } from '../context/HousesContext'
 import { houses } from '../houses'
 
-export default function NavBar(){
+export default function FilterNavbar(){
     const {setProperties, btnActive, setBtnActive} = useContext(HousesContext);
 
     function filterProperties(e){
